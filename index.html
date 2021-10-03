@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang=”en”>
 
-
-    <head>
+<head>
         <title>Friendly Recap </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="screenshots/favicon-32x32.png"/>
         
-    </head>
+</head>
 
 
+<header>
+        <h1>Team Friendly Meeting Notes</h1>
+</header>
 
-    <body>
-
-    <h1>Team Friendly Meeting Notes</h1>
+<body>
+    
+    
     
 
     <img src="screenshots/smiley.png"
@@ -24,78 +26,190 @@
         
         <a href="#roll">Attendance</a> |
         <a href="#agenda">Agenda</a> |
-        <a href="#test">test</a>
+        <a href="#oldbusiness">Business</a> |
+        <a href="#resources">Resources</a> |
+        <a href="#responses">Leave Your Info</a>
         
     </nav>
-
+    <hr>
     <h2 id="roll">General Happiness Meeting</h2>
-            <h4> October 1, 2021 </h4>
 
+            <h3> Introduction | October 1, 2021 </h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, cum natus perspiciatis expedita reprehenderit consectetur, distinctio quidem nesciunt nemo quibusdam, dolorem laudantium amet sit? Soluta delectus tempore natus dicta asperiores?
+            Illum error praesentium necessitatibus ipsum repudiandae libero aperiam tempore, vitae obcaecati, commodi quaerat, fugit corrupti blanditiis delectus quisquam. Ipsum pariatur facilis sunt, soluta modi assumenda deleniti iusto minus magni voluptate?</p>
+            
+            
 
+<section>
     <div class="rollcall">
 
         
-        <p> Attendees: </p>
+        <p><span><strong>Attendees:</strong></span></p>
         <ul>
             <li>John Appleseed</li>
             <li>Kim Possible</li>
             <li>Donald Obama</li>
+            <li>Shego</li>
+            <li>Joanne</li>
         </ul>
         
         
        
-        <p>Absence: </p>
+        <p><strong>Absence:</strong></p>
         <ul>
             <li>Sleepy Joey</li>
         </ul>
         
     </div>
+</section>
 
-
+<section>
+    <div class="Meeting Agenda">
     <h2 id="agenda">Agenda</h2>
-        <ul>
-            <li>Vibe Check</li>
-            <li>10 Minute Yoga</li>
-            <li>Catering Break</li>
-            <li>Group Meditation</li>
-            <li>Send-off Goals</li>
-        </ul>
+        <ol>
+            <li><i>Vibe</i> Check</li>
+            <li>10 Minute <em>Yoga</em></li>
+            <li><em>Catering</em> Break</li>
+            <li>Group <em>Meditation</em></li>
+            <li>Send-off <i>Goals</i></li>
+        </ol>
+    </div>
+</section>
+
+<section>
+<div class = "business">
+    <h3 id="oldbusiness">Old Business</h3>
+    
+        <details>
+            <summary>Past-Due</summary>
+            <b>Smile!</b>
+        </details>
+    
+
+    <h3>New Business</h3>
+        <details>
+            <summary>To-Do</summary>
+           <strong>Make someone else smile!</strong>
+        </details>
+ </div>
+ </section>
+
+<hr>
+
+ <section>
+     <div class= "Media">
+        <h2 id="resources"> Vibe Check Resources </h2>
+        <audio controls>
+            <source src="media/house.mp3" type="audio/mp3">
+        </audio>
+        <br>
+        <video width="320" height="240" controls>
+            <source src="media/house.MP4" type="video/mp4">
+        </video>
+
+         Shoutout to <b>@djcallumknight</b> on <b><i>TikTok</i></b>
+     </div>
+ </section>
+
+ <section>
+     <div class="forms">
+         <h2 id="responses">Leave us some info!</h2>
+            <form>
+                <fieldset enabled>
+                    <h3> Personal Info </h3>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                    <label for="First Name">First Name</label>
+                    <input type="text" id="First Name">
+                    <label for="Last Name">Last Name</label>
+                    <input type="text" id="Last Name">
+                    <label for="YOG">Expected Graduation</label>
+                    <input type="date" id="YOG">
+                    
+                    <br>
+                    
+                    
+                    <label for="Gender">Gender</label>
+                    <input list="Gender Choice" id="Gender" name="Gender Choice">
+                    <datalist id="Gender Choice">
+                        <option value="Male"></option>
+                        <option value="Female"></option>
+                        <option value="Other/Nonbinary"></option>
+                        <option value="Prefer not to say"></option>
+                    </datalist>
+
+
+                    <label for="Class Standing">Class Standing</label>
+                    <select name="Class Standing" id="class Standing">
+                        <option value="Freshman">Freshman</option>
+                        <option value="Sophomore">Sophomore</option>
+                        <option value="Junior">Junior</option>
+                        <option value="Senior">Senior</option>
+                        <option value="1st Year Transfer">1st Year Transfer</option>
+                        <option value="2nd Year Transfer">2nd Year Transfer</option>
+                        
+                    </select>
+
+                    <hr>
+                    <h3> Current Availability: </h3>
+
+                    <label for="Sunday">Sunday</label>
+                    <input type="checkbox" id="Sunday">
+                    <br>
+                    <label for="Monday">Monday</label>
+                    <input type="checkbox" id="Monday">
+                    <br>
+                    <label for="Tuesday">Tuesday</label>
+                    <input type="checkbox" id="Tuesday">
+                    <br>
+                    <label for="Wednesday">Wednesday</label>
+                    <input type="checkbox" id="Wednesday">
+                    <br>
+                    <label for="Thursday">Thursday</label>
+                    <input type="checkbox" id="Thursday">
+                    <br>
+                    <label for="Friday">Friday</label>
+                    <input type="checkbox" id="Friday">
+                    <br>
+                    <label for="Saturday">Saturday</label>
+                    <input type="checkbox" id="Saturday">
+                    <br>
+                    
 
 
 
 
+                    <hr>
+                    <h3>Any Comments?</h3>
+                    <br>
+                    <textarea id="comments" name="Comments" rows="4" cols="50"></textarea>
+                    <br>
+                    <h4>Have you passed the vibe check?</h4>
+                    
+                    <input type="radio" id="Yes I have">
+                    <label for="Yes I have">Yes I have</label>
+                    <br>
+                    <input type="radio" id="No I have not">
+                    <label for="No I have not">No I have not. I will work on it. :( </label>
+                    <br>
+                    <br>
+                    <button type="button" onclick="alert('Yeah this does not actually submit anywhere')">Submit All</button>
 
 
+                </fieldset>
+
+            </form>
+     </div>
+ </section>
 
 
+</body>
 
 
-
-
-
-
-
-
-
-
-
-        <h1 id="test">test</h1>
- TODO Business (old)
-
- TODO business (new)
-
-
- Comment Recap
-
- Presented media
-
-Audio
-
-(video)
-
-
-
-    </body>
+<footer>
+    Copyright Smile Company 2021
+</footer>
 
 
 
