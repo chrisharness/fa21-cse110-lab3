@@ -7,8 +7,9 @@
     <meta charset="UTF-8">
     <link rel="icon" type="image/png" href="screenshots/favicon-32x32.png" />
     <link rel="stylesheet" href="style.css">
+    <!--added internal css styling for headings-->
     <style>
-
+        
         h1{
             color: #c8ff00;
         }
@@ -72,16 +73,17 @@
 
             <p><span><strong>Attendees:</strong></span></p>
             <ul>
-                <li>John Appleseed</li>
-                <li>Kim Possible</li>
-                <li>Donald Obama</li>
-                <li>Shego</li>
-                <li>Joanne</li>
+                <!--added units, 3relative/3absolute-->
+                <li style="font-size:3em">John Appleseed</li>
+                <li style="font-size:1.5vw;">Kim Possible</li>
+                <li style="font-size:2ex;">Donald Obama</li>
+                <li style="font-size:1.01cm;">Shego</li>
+                <li style="font-size:10px;">Joanne</li>
             </ul>
 
             <p><strong>Absence:</strong></p>
             <ul>
-                <li>Sleepy Joey</li>
+                <li style="font-size:.5in;">Sleepy Joey</li>
             </ul>
 
         </div>
@@ -156,7 +158,7 @@
                     <input type="text" id="LastName">
 
                     <br>
-                    
+
                     <label for="YOG">Expected Graduation</label>
                     <input type="date" id="YOG">
 
