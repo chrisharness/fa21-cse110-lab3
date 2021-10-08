@@ -4,15 +4,30 @@ Begin Style Sheet
 
 header{
     margin:auto;
-    border-radius:3em;
+    border-radius:30em;
     border-style:solid;
     border-color:black;
     display:block;
     text-align:center;
     margin-bottom:10px;
 }
-
+a{
+    position:static;
+    font-family:Sans-Serif;
+    padding: 10px 10px 10px 10px;
+    margin:auto;
+}
+a:hover{
+    background-color:plum;
+}
+a:visited{
+    color:yellow;
+}
+a:active{
+    color:red;
+}
 body{
+    display:inline-block;
     background-color: rgb(42, 186, 243);
     margin-top: 1px;
     margin-bottom:1px;
@@ -24,6 +39,36 @@ body{
     border-color:pink;
     border-radius: 2px;
     border-width:3px;
-    
+    color:papayawhip;
+    font-family:sans-serif;
+}
 
+hr{
+    position:relative;
+    height:auto;
+    width:auto;
+    max-width: unset;
+    max-height:unset;
+    border-color:aquamarine;
+    border-width: 10px; 
+    border-radius: 3px;
+}
+em{
+    text-decoration:line-through red; 
+}
+strong{
+
+    color:aquamarine;
+}
+b{
+    color:yellow;
+}
+summary{
+    
+    color:rgb(23, 255, 178);
+}
+
+footer{
+    
+    text-align:center;
 }
