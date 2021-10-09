@@ -11,6 +11,18 @@ universal selector
     font-family:sans-serif;
 }
 
+/*
+media query
+*/
+
+@media screen and (max-width:780px){
+
+    body{
+        font-family:Times New Roman;
+        font-size:18px;
+    }
+    
+} 
 
 
 /*
