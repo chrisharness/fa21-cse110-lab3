@@ -2,6 +2,27 @@
 Begin Style Sheet
 */
 
+
+/*
+universal selector
+*/
+
+*{
+    font-family:sans-serif;
+}
+
+
+
+/*
+attribute selector
+*/
+
+h2[id="roll"]{
+    color:rgb(176, 243, 19);
+    font-family:cursive;
+    font-size:40px
+}
+
 header{
     margin:auto;
     border-radius:30em;
@@ -10,13 +31,32 @@ header{
     display:block;
     text-align:center;
     margin-bottom:10px;
+    padding:15px 15px 15px 15px;
 }
+
+/*
+ Combining two selectors
+*/
+
+header.img{
+    padding:5px 5px 5px 5px;
+}
+
+/*
+element selector
+*/
+
 a{
     position:static;
     font-family:Sans-Serif;
     padding: 10px 10px 10px 10px;
     margin:auto;
 }
+
+/*
+Pseudo-class selector
+*/
+
 a:hover{
     background-color:plum;
 }
@@ -26,12 +66,21 @@ a:visited{
 a:active{
     color:red;
 }
+
+/*
+
+padding/margin
+
+*/
+
+
 body{
     display:inline-block;
     background-color: rgb(42, 186, 243);
     margin-top: 1px;
     margin-bottom:1px;
-    margin: 1px 2px 1px 2px;
+    margin-right:2px;
+    margin-left:2px;
     padding-top: 0.5px;
     padding-bottom:0.5px;
     padding: 0.5px 1px 0.5px 1px;
@@ -42,6 +91,10 @@ body{
     color:papayawhip;
     font-family:sans-serif;
 }
+
+/*
+ sizing
+*/
 
 hr{
     position:relative;
@@ -56,8 +109,9 @@ hr{
 em{
     text-decoration:line-through red; 
 }
-strong{
 
+strong{
+    
     color:aquamarine;
 }
 b{
@@ -67,8 +121,98 @@ summary{
     
     color:rgb(23, 255, 178);
 }
+video{
+    display:block;
+    margin:auto;
+}
+audio{
+    display:block;
+    margin:auto;
+}
+
+/*
+
+Grid Layout
+
+*/
+
+
+.Media{
+    display:grid;
+    text-align: center;
+    grid-column-gap:50px;
+    grid-row-gap: 30px;
+    grid-area: auto;
+    margin:auto;
+    padding-bottom:50px;
+}
+
+/*
+Class selector
+*/
+
+/*
+
+Flexbox
+
+*/
+
+.forms{
+    display:flexbox;
+    text-align:center;
+    flex-flow: row;
+    flex-wrap: wrap-reverse;
+    flex-grow: 3;
+    justify-content:center;
+}
+
+/*
+ID selector
+*/
+
+
+#responses{
+    color:white;   
+}
+
+em,b{
+    border:black 2px solid;  
+}
+
+/*
+Child Combinator
+*/
+
+p > strong {
+    background-color:black;
+}
+
+/*
+Descendant Combinator
+*/
+
+div em {
+    background-color:blueviolet;
+}
+
+/*
+General Sibling Combinator
+*/
+
+h2 ~ p {
+    font-size:30px;
+    
+}
+
+/*
+Adjacent sibling combinator
+*/
+
+h3+details{
+    font-size:60px;
+}
+
 
 footer{
-    
     text-align:center;
 }
